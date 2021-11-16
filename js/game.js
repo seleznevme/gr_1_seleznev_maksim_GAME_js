@@ -91,9 +91,7 @@ function gen_shot () { //функция генерации выстрела
 //Основное тело
 add_player_ship (); //добавляю корабль игрока
 document.addEventListener('keydown', function(event) {	
-	moove_player_ship (event.key); //запуск контроля перемещения корабля	
-});
-document.addEventListener('keydown', function(event) {
+	moove_player_ship (event.key); //перемещение корабля
 	if (event.key == 'Control') {
 		gen_shot ();//генерация выстрела
 	}
