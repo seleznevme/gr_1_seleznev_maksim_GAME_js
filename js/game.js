@@ -32,7 +32,6 @@ function add_player_ship () {
 	div_ship.style.position = 'absolute';
 	div_ship.style.left = '50%'; //начальная позиция - посредине экрана (со смещением в ближайший столбец за счет ширины корабля)
 	div_ship.style.top = (100 - parseInt(div_ship.style.height, 10)) + '%';
-	console.log(div_ship.style.top);
 	div_ship.id = 'player'; //id по которому потом искать буду
 }
 function moove_player_ship (key) {
