@@ -52,7 +52,7 @@ function gen_shot () { //функция генерации выстрела
 	let div_shot = document.createElement('div');
 	document.body.append(div_shot);
 	div_shot.style.height = '1%';
-	div_shot.style.width = '1%';	//приравниваю к ширине сетки, чтоб удобно было работать с координатами
+	div_shot.style.width = '1%';
 	div_shot.style.margin = '0 2%'
 	div_shot.style.background = 'blue';	
 	div_shot.style.position = 'absolute';
