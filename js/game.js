@@ -89,14 +89,12 @@ function gen_shot () { //функция генерации выстрела
 }
 //Основное тело
 add_player_ship (); //добавляю корабль игрока
-if (game_over == 0) { //разрешаю управлять пока не наступил game over
-	document.addEventListener('keydown', function(event) {	
-		moove_player_ship (event.key); //перемещение корабля
-		if (event.key == 'Control') {
-			gen_shot ();//генерация выстрела
-		}
-	});
-}
+document.addEventListener('keydown', function(event) {	
+	moove_player_ship (event.key); //перемещение корабля
+	if (event.key == 'Control') {
+		gen_shot ();//генерация выстрела
+	}
+});
 //Основной цикл
 let j = 0;
 while (j < 10000) { //крайнее условие конца игры, задаю, т.к. в цикле есть планировщик функция которого определяет game_over
